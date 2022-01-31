@@ -883,6 +883,13 @@
  * These settings can be reset by M502
  *
  * Note that if EEPROM is enabled, saved values will override these.
+ *
+ * Equation to calculate E-Steps-per-MM
+ * Standard motor steps / rev = 400
+ * Standard Micro-stepping = 16x
+ * Gear Ratio = 3
+ * Hobb Diameter (Effective) = 7.3
+ *     400 * 16 * 3 / (7.3 * 3.142) = 837 E-steps-per-mm
  */
 
 /**
